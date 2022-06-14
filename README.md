@@ -1,1 +1,1 @@
-# stepik
+# C++ courses

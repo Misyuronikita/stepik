@@ -1,0 +1,21 @@
+/*Дано три числа. Упорядочите их в порядке неубывания.
+
+Формат входных данных
+Вводятся три числа.
+Формат выходных данных
+Выведите ответ на задачу.*/
+
+
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    int a, b, c;
+    cin >> a >> b >> c;
+    int value1 = min(min(a, b), c);
+    int value3 = max(max(a, b), c);
+    int value2 = a + b + c - value3 - value1;
+    cout << value1 << " " << value2 << " " << value3;
+    return 0;
+}
